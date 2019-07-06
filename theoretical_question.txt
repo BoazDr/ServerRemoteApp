@@ -1,0 +1,7 @@
+Saving the token locally:
+Pro: we don't have an extra serverCall therefore we make the application faster.
+Con: The applicaion is more sensitive to internal changes
+
+Re-requesting a token from the server each time:
+Pro:  The applicaion is less sensitive to internal changes, changes on the server for example won't influence client's data updates etc..
+Con: A serverCall is added, and it might slow our applciaiton.

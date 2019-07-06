@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <EditText
+        android:id="@+id/prettyNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:hint="Insert pretty name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <EditText
+        android:id="@+id/changeImageET"
+        android:layout_width="187dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:hint="Insert image url"
+        app:layout_constraintStart_toStartOf="@+id/prettyNameET"
+        app:layout_constraintTop_toBottomOf="@+id/prettyNameET" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/submitPrettyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:visibility="gone"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="@+id/prettyNameET"
+        app:layout_constraintStart_toEndOf="@+id/prettyNameET"
+        app:layout_constraintTop_toTopOf="@+id/prettyNameET"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prettyNameET" />
+
+    <Button
+        android:id="@+id/submitImageUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Submit"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/changeImageET"
+        app:layout_constraintEnd_toEndOf="@+id/submitPrettyName"
+        app:layout_constraintTop_toTopOf="@+id/changeImageET"
+        app:layout_constraintVertical_bias="0.571" />
+
+</android.support.constraint.ConstraintLayout>
